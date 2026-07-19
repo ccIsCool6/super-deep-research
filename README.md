@@ -105,11 +105,12 @@ $deep-research-expert-v5
 - Codex、Claude Code、Trae 或其他能读取本地指令文件的主流 Agent；
 - 可以联网和读取资料的 AI 代理环境。如果你希望它做实时研究，就要允许它搜索、打开网页或读取你提供的文件；
 - Git，用来下载和更新本仓库。
+- Obsidian（查看markdown文件超级牛的软件）。如果你喜欢用双链、Callout 和知识库管理，可以把它作为阅读和沉淀研究成果的工具。但它不是必需品，本 Skill 默认使用普通 Markdown。 （为了达到更好的效果请下载obsidian获得最好的体验）
 
 推荐：
 
 - Python 3.9 或更高版本。Skill 自带了一些检查工具，用于确认包结构和研究成果是否满足基本要求；
-- Obsidian。如果你喜欢用双链、Callout 和知识库管理，可以把它作为阅读和沉淀研究成果的工具。但它不是必需品，本 Skill 默认使用普通 Markdown。
+
 
 下载地址：
 
