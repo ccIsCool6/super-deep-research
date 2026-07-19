@@ -105,12 +105,11 @@ $deep-research-expert-v5
 - Codex、Claude Code、Trae 或其他能读取本地指令文件的主流 Agent；
 - 可以联网和读取资料的 AI 代理环境。如果你希望它做实时研究，就要允许它搜索、打开网页或读取你提供的文件；
 - Git，用来下载和更新本仓库。
-- Obsidian（查看markdown文件超级牛的软件）。如果你喜欢用双链、Callout 和知识库管理，可以把它作为阅读和沉淀研究成果的工具。但它不是必需品，本 Skill 默认使用普通 Markdown。 （为了达到更好的效果请下载obsidian获得最好的体验）
 
 推荐：
 
 - Python 3.9 或更高版本。Skill 自带了一些检查工具，用于确认包结构和研究成果是否满足基本要求；
-
+- Obsidian。它是非常适合阅读 Markdown、管理双链笔记和沉淀研究成果的软件。这个 Skill 默认使用普通 Markdown，所以没有 Obsidian 也能运行；但如果你想获得更好的知识库阅读、整理和长期复用体验，强烈推荐提前安装 Obsidian。
 
 下载地址：
 
@@ -120,11 +119,13 @@ $deep-research-expert-v5
 
 ## 安装方法
 
-把仓库下载到本地：
+建议直接把仓库下载成 Skill 名称，这样后续复制、校验和 Agent 读取都更稳定：
 
 ```bash
-git clone https://github.com/ccIsCool6/super-deep-research.git
+git clone https://github.com/ccIsCool6/super-deep-research.git deep-research-expert-v5
 ```
+
+如果你已经用默认方式下载，得到的文件夹可能叫 `super-deep-research` 或 `super-deep-research-main`。这种情况下，先把文件夹重命名为 `deep-research-expert-v5`。
 
 ### Codex
 
@@ -132,7 +133,7 @@ git clone https://github.com/ccIsCool6/super-deep-research.git
 
 ```bash
 mkdir -p "$HOME/.codex/skills"
-cp -R super-deep-research "$HOME/.codex/skills/deep-research-expert-v5"
+cp -R deep-research-expert-v5 "$HOME/.codex/skills/deep-research-expert-v5"
 ```
 
 重启 Codex 后，在对话中使用：
@@ -143,10 +144,10 @@ $deep-research-expert-v5
 
 ### Claude Code
 
-Claude Code 不一定使用和 Codex 完全相同的 skills 目录机制。最稳妥的方式是把这个仓库放进你的项目目录或常用工具目录，然后在 Claude Code 里明确要求它读取主说明文件：
+Claude Code 不一定使用和 Codex 完全相同的 skills 目录机制。最稳妥的方式是把这个仓库放进你的项目目录或常用工具目录，并保持文件夹名为 `deep-research-expert-v5`，然后在 Claude Code 里明确要求它读取主说明文件：
 
 ```text
-请先读取 super-deep-research/SKILL.md，并按 deep-research-expert-v5 的流程执行这次研究。
+请先读取 deep-research-expert-v5/SKILL.md，并按 deep-research-expert-v5 的流程执行这次研究。
 ```
 
 如果你的 Claude Code 工作流支持项目级说明文件，也可以在项目说明里写明：需要深度研究时，优先读取这个仓库的 `SKILL.md`，再按其中的资源路由读取 `references/` 下的必要文件。
