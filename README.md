@@ -1,6 +1,8 @@
 # Super Deep Research
 
-`Super Deep Research` 是一个面向 Codex、Trae 等本地 Skill 运行环境的深度研究 Skill。它的正式名称是 `deep-research-expert-v5`，目标不是让 AI 更快地“搜一搜并总结”，而是让 AI 像一个严谨的研究助理一样，先把问题问清楚，再查证、综合、解释，最后交付一份人真的能读懂、能判断、能复用的研究成果。
+`Super Deep Research` 是一个面向 Codex、Claude Code、Trae 以及其他主流 Agent 的深度研究 Skill。它的正式名称是 `deep-research-expert-v5`，目标不是让 AI 更快地“搜一搜并总结”，而是让 AI 像一个严谨的研究助理一样，先把问题问清楚，再查证、综合、解释，最后交付一份人真的能读懂、能判断、能复用的研究成果。
+
+这个仓库本质上是一套可迁移的研究方法包。只要你的 Agent 能读取本地文件、遵循 `SKILL.md` 里的说明，并在需要时使用搜索、文件读取和命令行工具，就可以使用它。不同 Agent 的“安装方式”可能不同，但核心用法相同：让 Agent 先读取这个 Skill，再按它的流程完成研究。
 
 它适合用在这些场景：
 
@@ -100,7 +102,7 @@ $deep-research-expert-v5
 
 必需：
 
-- Codex、Trae 或其他能加载本地 Skill 的运行环境；
+- Codex、Claude Code、Trae 或其他能读取本地指令文件的主流 Agent；
 - 可以联网和读取资料的 AI 代理环境。如果你希望它做实时研究，就要允许它搜索、打开网页或读取你提供的文件；
 - Git，用来下载和更新本仓库。
 
@@ -123,6 +125,8 @@ $deep-research-expert-v5
 git clone https://github.com/ccIsCool6/super-deep-research.git
 ```
 
+### Codex
+
 复制到 Codex 的 skills 目录，并保持目录名为 `deep-research-expert-v5`：
 
 ```bash
@@ -136,11 +140,25 @@ cp -R super-deep-research "$HOME/.codex/skills/deep-research-expert-v5"
 $deep-research-expert-v5
 ```
 
+### Claude Code
+
+Claude Code 不一定使用和 Codex 完全相同的 skills 目录机制。最稳妥的方式是把这个仓库放进你的项目目录或常用工具目录，然后在 Claude Code 里明确要求它读取主说明文件：
+
+```text
+请先读取 super-deep-research/SKILL.md，并按 deep-research-expert-v5 的流程执行这次研究。
+```
+
+如果你的 Claude Code 工作流支持项目级说明文件，也可以在项目说明里写明：需要深度研究时，优先读取这个仓库的 `SKILL.md`，再按其中的资源路由读取 `references/` 下的必要文件。
+
+### Trae 和其他主流 Agent
+
 如果你使用的是 Trae 或其他本地 Skill 运行环境，把整个仓库文件夹复制到对应的 skills 目录即可。关键是最终文件夹名要叫：
 
 ```text
 deep-research-expert-v5
 ```
+
+如果某个 Agent 没有专门的 Skill 安装机制，也可以把仓库作为普通本地文件夹使用。启动研究前，让 Agent 先读取 `SKILL.md`；当它需要更细的研究、证据、写作或审查规则时，再按 `SKILL.md` 指向的路径读取 `references/`、`assets/` 和 `scripts/`。这样做不会得到平台原生的自动路由体验，但仍然能复用这套研究方法。
 
 ## 仓库里有什么
 
