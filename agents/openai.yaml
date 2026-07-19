@@ -1,0 +1,4 @@
+interface:
+  display_name: "深度研究与解释性综合"
+  short_description: "证据约束的深度研究、解释性综合、批判审查与连贯教学报告"
+  default_prompt: "请使用 $deep-research-expert-v5 深入研究这个主题，先与我对齐研究契约；基于可核验证据形成自己的解释模型，用动态篇幅下界和独立批判审查防止偷懒、复述与填充，最后写成逻辑连贯、足够详细、能让我真正学会的跨平台 Markdown 报告。"

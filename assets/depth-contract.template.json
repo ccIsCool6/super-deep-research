@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "counting_mode": "npu-v1",
+  "task_type": "learning-report",
+  "tier": "medium",
+  "contract_version": 1,
+  "reader_profile": "",
+  "calibration_rationale": "",
+  "alignment_confirmed_at": "",
+  "frozen_at": "",
+  "revision_reason": "",
+  "reconfirmed_after_reduction": false,
+  "previous_total_floor_npu": 0,
+  "total_floor_npu": 0,
+  "expected_band_npu": [0, 0],
+  "max_exact_duplicate_ratio": 0.03,
+  "max_near_duplicate_ratio": 0.08,
+  "independent_critic_required": true,
+  "candidate_files": ["报告.md"],
+  "evidence_files": [
+    "audit/source-ledger.csv",
+    "audit/claim-evidence-ledger.csv"
+  ],
+  "core_questions": [
+    {
+      "question_id": "Q1",
+      "question": ""
+    }
+  ],
+  "review_records": {
+    "evidence-logic": "audit/evidence-logic-review.json",
+    "blind-reader": "audit/blind-reader-review.json"
+  },
+  "source_coverage": {
+    "ledger_path": "audit/document-coverage.csv",
+    "expected_outline_items": 0,
+    "outline_frozen_before_synthesis": false,
+    "sources": [
+      {
+        "source_id": "",
+        "total_pages_or_equivalent_units": 0
+      }
+    ]
+  },
+  "integration": {
+    "location": "",
+    "floor_npu": 0
+  },
+  "units": [
+    {
+      "unit_id": "",
+      "question": "",
+      "reader_outcome": "",
+      "importance": "central",
+      "core_question_ids": ["Q1"],
+      "scores": {
+        "complexity": 1,
+        "dispute": 1,
+        "audience_gap": 1,
+        "risk": 1
+      },
+      "facets": {
+        "definitions": 1,
+        "distinctions": 1,
+        "mechanism_links": 1,
+        "evidence_clusters": 1,
+        "alternatives": 1,
+        "boundaries": 1,
+        "cases": 1,
+        "implications": 1,
+        "transfers": 1,
+        "worked_examples": 0,
+        "failure_traces": 0,
+        "reproducible_checks": 0,
+        "exercises": 0
+      },
+      "delivery": {
+        "location": ""
+      },
+      "capacity": {
+        "floor_npu": 0,
+        "previous_floor_npu": 0,
+        "revision_reason": "",
+        "reconfirmed_after_reduction": false
+      },
+      "semantic_audit": {
+        "conclusion_clear": false,
+        "evidence_interpreted": false,
+        "reasoning_bridge_visible": false,
+        "mechanism_explained_or_unknown_stated": false,
+        "alternatives_handled": false,
+        "boundaries_stated": false,
+        "example_or_counterexample_used": false,
+        "implication_explained": false,
+        "transfer_test_passed": false,
+        "transition_coherent": false,
+        "reviewer_note": ""
+      }
+    }
+  ]
+}

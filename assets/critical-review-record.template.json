@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "review_id": "",
+  "review_type": "evidence-logic",
+  "reviewer_id": "",
+  "reviewer_context_id": "",
+  "reviewer_role": "independent evidence and logic critic",
+  "reviewer_provenance": "independent-agent-context",
+  "author_involved": false,
+  "independent_context": true,
+  "input_scope": "contract-evidence-and-final-deliverable",
+  "candidate_sha256": "",
+  "contract_sha256": "",
+  "evidence_bundle_sha256": "",
+  "contract_version": 1,
+  "reviewed_at": "",
+  "status": "REPAIR",
+  "preregistered_attack_surface": [],
+  "gate_results": [
+    {
+      "gate": "",
+      "status": "REPAIR",
+      "evidence_location": "",
+      "finding": ""
+    }
+  ],
+  "issues": [],
+  "strongest_counterargument": {
+    "argument": "",
+    "disposition": "",
+    "evidence_location": ""
+  },
+  "filler_audit": {
+    "status": "REPAIR",
+    "evidence": "",
+    "effective_npu": 0,
+    "exact_duplicate_ratio": 0,
+    "near_duplicate_ratio": 0
+  },
+  "novel_transfer_test": {
+    "status": "not-applicable",
+    "novel_case": "",
+    "model_reproduced": "",
+    "application_result": ""
+  }
+}

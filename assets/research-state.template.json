@@ -1,0 +1,90 @@
+{
+  "schema_version": "2.0",
+  "project_id": "",
+  "topic": "",
+  "tier": null,
+  "task_type": "research",
+  "status": "alignment",
+  "delivery_mode": "auto",
+  "markdown_profile": "standard",
+  "research_contract": {
+    "true_problem": "",
+    "current_cognitive_model": "",
+    "true_use": "",
+    "audience": "",
+    "error_cost": "",
+    "scope": "",
+    "exclusions": [],
+    "critical_assumptions": [],
+    "must_answer_questions": [],
+    "time_boundary": "",
+    "version_or_jurisdiction": "",
+    "writing_path": "",
+    "explanatory_synthesis_goal": "",
+    "reader_transfer_goal": "",
+    "alignment_confirmed_at": "",
+    "deliverable": "",
+    "completion_criteria": []
+  },
+  "source_targets": {
+    "qualified_unique_sources_target": 0,
+    "qualified_unique_sources_current": 0,
+    "direct_or_primary_sources_target": 0,
+    "direct_or_primary_sources_current": 0,
+    "counter_or_alternative_sources_target": 0,
+    "counter_or_alternative_sources_current": 0,
+    "independent_source_families_current": 0,
+    "counts_are_contract_hard_floor": false,
+    "shortfall_reason": "",
+    "shortfall_impact": ""
+  },
+  "coverage_map": [],
+  "source_document_coverage": {
+    "required": false,
+    "ledger_path": "",
+    "expected_outline_items": 0,
+    "outline_frozen_before_synthesis": false,
+    "sources": [],
+    "validation_status": "not-applicable"
+  },
+  "completed_sections": [],
+  "open_gaps": [],
+  "conflicts": [],
+  "gate_statuses": {
+    "alignment": "pending",
+    "evidence": "pending",
+    "explanatory_synthesis": "pending",
+    "coherence": "pending",
+    "deliverable": "pending"
+  },
+  "depth_contract": {
+    "path": "",
+    "contract_version": 0,
+    "total_floor_npu": 0,
+    "effective_npu": 0,
+    "validation_status": "pending"
+  },
+  "candidate_files": [],
+  "evidence_files": [],
+  "critical_review": {
+    "candidate_version": "",
+    "candidate_sha256": "",
+    "contract_sha256": "",
+    "evidence_bundle_sha256": "",
+    "evidence_logic_record": "",
+    "evidence_logic_status": "pending",
+    "blind_reader_record": "",
+    "blind_reader_status": "pending",
+    "reviewers_are_distinct": false,
+    "open_p0_p1_issue_ids": []
+  },
+  "manual_semantic_audit": {
+    "reviewer": "",
+    "reviewed_at": "",
+    "status": "pending",
+    "notes": ""
+  },
+  "blocked_reason": "",
+  "artifacts": [],
+  "last_updated": ""
+}
